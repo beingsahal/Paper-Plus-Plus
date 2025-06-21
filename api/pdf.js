@@ -4,7 +4,6 @@ const { writeFileSync, mkdtempSync } = require('fs');
 const { tmpdir } = require('os');
 const { join }   = require('path');
 const { spawnSync } = require('child_process');
-const puppeteer = require('puppeteer-core');
 
 function tmp(name){ return join(mkdtempSync(join(tmpdir(), 'cv-')), name); }
 
