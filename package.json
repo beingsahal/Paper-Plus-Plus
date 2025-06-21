@@ -16,7 +16,11 @@
   "scripts": {
     "start": "resume serve"
   },
-  "devDependencies": {},
+  "dependencies": {
+    "handlebars": ">=4.0.0",
+    "@sparticuz/chromium": "^119.0.0",  
+    "puppeteer-core": "^21.7.0"      
+  },
   "keywords": [
     "jsonresume",
     "json",
