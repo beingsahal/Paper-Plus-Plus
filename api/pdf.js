@@ -23,8 +23,10 @@ module.exports = async (req, res) => {
               { stdio: 'inherit' });
 
     const browser = await puppeteer.launch({
-      args: ['--no-sandbox'],
-      executablePath: process.env.CHROMIUM_PATH || '/usr/bin/chromium-browser'
+      args: chromium.args,
+      defaultViewport: chromium.defaultViewport,
+      executablePath: await chromium.executablePath(),   // ← magic path
+      headless: chromium.headless,
     });
     const page = await browser.newPage();
     await page.goto('file://' + htmlPath, { waitUntil: 'networkidle0' });
