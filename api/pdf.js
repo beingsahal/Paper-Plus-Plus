@@ -1,3 +1,5 @@
+const chromium  = require('@sparticuz/chromium');
+const puppeteer = require('puppeteer-core');
 const { writeFileSync, mkdtempSync } = require('fs');
 const { tmpdir } = require('os');
 const { join }   = require('path');
