@@ -1,28 +1,10 @@
 {
-  "name": "jsonresume-theme-paper-plus-plus",
-  "version": "0.6.0",
-  "description": "A theme for JSON Resume",
-  "author": "Johan Lindell",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lindell/jsonresume-theme-paper"
-  },
-  "license": "MIT",
+  "name": "paper-plus-plus-api",
+  "version": "1.0.0",
+  "license": "AGPL-3.0",
   "dependencies": {
-    "handlebars": ">=4.0.0"
-  },
-  "homepage": "https://github.com/lindell/jsonresume-theme-paper",
-  "main": "index.js",
-  "scripts": {
-    "start": "resume serve"
-  },
-  "devDependencies": {},
-  "keywords": [
-    "jsonresume",
-    "json",
-    "resume",
-    "paper",
-    "paper++",
-    "paper plus plus"
-  ]
+    "@vercel/node": "^3.0.0",
+    "puppeteer-core": "^22.5.3",
+    "resume-cli": "^3.0.6"
+  }
 }
