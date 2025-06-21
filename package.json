@@ -4,8 +4,8 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "@vercel/node": "^3.0.0",
-    "puppeteer-core": "^22.5.3",
-    "resume-cli": "3.0.6",
+    "puppeteer-core": "19.7.5",
+    "resume-cli": "^3.0.6",
     "@sparticuz/chromium": "^118.0.0"
   }
 }
